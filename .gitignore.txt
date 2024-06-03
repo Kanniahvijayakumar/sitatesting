@@ -1,0 +1,49 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven build directory
+target/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# VS Code project files
+.vscode/
+
+# Test output directories
+test-output/
+
+# Drivers directory
+src/test/resources/Drivers/
+
+# Logs directory
+logs/
+
+# Compiled output directory
+bin/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db

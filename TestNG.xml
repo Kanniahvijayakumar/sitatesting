@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SitaTestingTestSuite">
+	
+	<listeners>
+	    <listener class-name="listener.TestNGListener" />
+	</listeners>
+<!--    <parameter name="browser" value="chrome"/>-->
+<!--    <parameter name="browser" value="firefox"/>-->
+	<parameter name="browser" value="${browser}"/>
+    <test name="SitaTesting">
+        <classes>
+            <class name="testsuite.ReservationNowTestSuite"/>
+        </classes>
+     </test>
+</suite>
