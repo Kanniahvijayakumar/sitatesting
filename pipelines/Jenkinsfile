@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+    
+    environment {
+        BROWSER = "${params.browser}"
+        TESTNG_XML_FILE_PATH = "${params.TESTNG_XML_FILE_PATH}"
+    }
+    
+    parameters {
+        string(name: 'browser', defaultValue: 'chrome', description: 'Mention the browser to run in the parameter')
+        string(name: 'TESTNG_XML_FILE_PATH', defaultValue: 'TestNG', description: 'Test Type - Regression | Smoke')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/Kanniahvijayakumar/sitatesting.git', branch: 'master'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                script {
+                    echo "Browser Type: ${BROWSER}"
+                    echo "TestNG XML File Path: ${TESTNG_XML_FILE_PATH}"
+                }
+                bat 'mvn clean test -DtestngXmlFile=%TESTNG_XML_FILE_PATH%.xml'
+            }
+        }
+    }
+    
+    post {
+    always {
+      testNG()
+    }
+  }
+}
