@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SitaTestingTestSuite" class="navigator-link">
-              <span class="suite-name border-failed">SitaTestingTestSuite</span>
+              <span class="suite-name border-passed">SitaTestingTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-SitaTestingTestSuite" class="hide-methods failed suite-SitaTestingTestSuite"> (hide)</a> <!-- hide-methods failed suite-SitaTestingTestSuite -->
-                      <a href="#" panel-name="suite-SitaTestingTestSuite" class="show-methods failed suite-SitaTestingTestSuite"> (show)</a> <!-- show-methods failed suite-SitaTestingTestSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SitaTestingTestSuite" class="hide-methods passed suite-SitaTestingTestSuite"> (hide)</a> <!-- hide-methods passed suite-SitaTestingTestSuite -->
+                      <a href="#" panel-name="suite-SitaTestingTestSuite" class="show-methods passed suite-SitaTestingTestSuite"> (show)</a> <!-- show-methods passed suite-SitaTestingTestSuite -->
                     </span>
-                    <div class="method-list-content failed suite-SitaTestingTestSuite">
+                    <div class="method-list-content passed suite-SitaTestingTestSuite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SitaTestingTestSuite" title="testsuite.ReservationNowTestSuite" class="method navigator-link" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-SitaTestingTestSuite -->
+                    </div> <!-- method-list-content passed suite-SitaTestingTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SitaTestingTestSuite" class="panel SitaTestingTestSuite">
-          <div class="suite-SitaTestingTestSuite-class-failed">
+          <div class="suite-SitaTestingTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testsuite.ReservationNowTestSuite</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,36 +130,10 @@
                   <a name="testCase1">
                   </a> <!-- testCase1 -->
                   <span class="method-name">testCase1</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;weekly-offers&apos;]/div[2]/div/div/div/div[1]/div/div[5]/div/div/div/h4[text()=&apos;Kingston&apos;]&quot;}
-  (Session info: chrome=125.0.6422.113)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;VIJAYAKUMAR&apos;, ip: &apos;192.168.0.97&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [21df264ef95f7218cc3b126da59bb63e, findElement {using=xpath, value=//div[@class=&apos;weekly-offers&apos;]/div[2]/div/div/div/div[1]/div/div[5]/div/div/div/h4[text()=&apos;Kingston&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\kanni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59097/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 21df264ef95f7218cc3b126da59bb63e
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at uiExecution.UIOperation.perform(UIOperation.java:124)
-	at uiExecution.UIOperation.Execution(UIOperation.java:107)
-	at testsuite.ReservationNowTestSuite.testCase1(ReservationNowTestSuite.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SitaTestingTestSuite-class-failed -->
+          </div> <!-- suite-SitaTestingTestSuite-class-passed -->
         </div> <!-- panel SitaTestingTestSuite -->
         <div panel-name="test-xml-SitaTestingTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -220,12 +194,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCase1')
 data.setCell(0, 2, 'testsuite.ReservationNowTestSuite')
-data.setCell(0, 3, 6344);
+data.setCell(0, 3, 9369);
 window.suiteTableData['SitaTestingTestSuite']= { tableData: data, tableDiv: 'times-div-SitaTestingTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-SitaTestingTestSuite">
               </div> <!-- times-div-SitaTestingTestSuite -->
             </div> <!-- times-div -->
@@ -257,10 +231,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testCase1</span>
-                <span class="method-start">1275 ms</span>
+                <span class="method-start">2312 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

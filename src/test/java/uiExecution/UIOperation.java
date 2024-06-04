@@ -159,6 +159,12 @@ public class UIOperation{
                         // Create a Select instance and select the option by value
                         new Select(driver.findElement(this.getObject(p, objectName, objectType))).selectByValue(value);
                         break;
+                     
+                    case "TEARDOWN":
+                        // TEARDOWN the application
+                    	Thread.sleep(1000);
+                        driver.quit();
+                        break;
 
                     default:
                         throw new Exception("Invalid operation: " + operation);
